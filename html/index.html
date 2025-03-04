@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOICEIFY</title>
+    <link rel="icon" href="../images/headset-solid.svg" style="border-radius: 100%;">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <h2 style="font-family:cursive;">Voiceify</h2>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </header>
+    
+
+    <main id="main">
+
+        <!-- Welcome Section -->
+        <section class="section-container">
+            <div class="text-box">
+                <h1>Welcome to VOICEIFY</h1>
+                <p style="font-size: 20px;">Transform your written words into lifelike speech with Voiceify. Our technology ensures a natural-sounding audio experience for accessibility, education, or entertainment.</p>
+                <a href="speech.html"><button class="btn">Get started</button></a>
+            </div>
+            <div class="image-box">
+                <img src="../images/prooo2.jpg" alt="Welcome Image">
+            </div>
+            
+        </section>
+
+        <!-- About Section (Image on Left, Text on Right) -->
+        <section id="about" class="section-container">
+            <div class="text-box">
+                <center><h1>About Text to Speech</h1>
+                <div class="image-box">
+                    <img src="../images/prooo1.jpg" alt="About Image">
+                </div>
+                <p style="font-size: 20px;">VOICEIFY is a user-friendly website designed by Renuka Pulavarthi to convert text into speech efficiently and accurately.</p></center>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Get in Touch</h1>
+        </section>
+        
+        <section class="contact-container">
+            <div class="contact-box">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media for updates.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        
+            <div class="contact-box">
+                <h3>Need Assistance?</h3>
+                <p>Have any questions? Check out our <a href="#feedback">feedback form</a> and let us know how we can help.</p>
+            </div>
+        </section>
+        <section id="feedback">
+            <h1>Feedback Form</h1>
+            <div class="feedback-container">
+                <form>
+                    <p><b>Enter your name:</b></p>
+                    <input type="text" name="name"><br>
+                    <p><b>Enter your Email ID:</b></p>
+                    <input type="text" name="email"><br>
+                    <p><b>How do you know about us?</b></p>
+                    <input type="radio" name="details"> Friends<br>
+                    <input type="radio" name="details"> Family<br>
+                    <input type="radio" name="details"> Social Media<br>
+                    <input type="radio" name="details"> College<br>
+                    <p><b>Share your experience</b></p>
+                    <input type="radio" name="details"> Excellent<br>
+                    <input type="radio" name="details"> Good<br>
+                    <input type="radio" name="details"> Average<br>
+                    <input type="radio" name="details"> Not as expected<br>
+                    <p><b>Give your feedback:</b></p>
+                    <textarea placeholder="Enter your feedback here..."></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

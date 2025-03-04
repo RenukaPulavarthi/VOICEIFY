@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px) {
+    .section-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .image-box img {
+        width: 80%;
+    }
+    .checkBtn {
+display: block;
+}
+header h2{
+    font-size: 20px;
+}
+
+/* Initially hide the menu */
+ul {
+display: flex;
+flex-direction: column;
+padding:0;
+margin:0;
+background-color: #ed1e79;
+position: absolute;
+top: 60px;
+right: 0;
+width: 90%;
+/* text-align: center; */
+height: 0;
+overflow: hidden;
+transition: height 0.3s ease-in-out;
+}
+
+/* ul li {
+padding: 10px 0;
+} */
+
+/* 🔹 Show menu when checkbox is checked */
+#check:checked ~ ul {
+height: 170px; 
+}
+
+/* 🔹 Close the menu when clicking any menu item */
+ul li a {
+padding-left: 50px;
+width: 100%;
+display: block;
+
+text-decoration: none;
+    background: #ed1e79;
+    color: white;
+/* align-items: center; */
+}
+
+ul li a:hover {
+font-size: 30px;
+}
+
+/* Automatically uncheck checkbox (close menu) when clicking a menu item */
+ul li a:active ~ #check {
+display: none;
+}
+
+}
+@media screen and (max-width: 480px) {
+    .contact-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-box p, .social-links a {
+        font-size: 14px;
+    }
+}
